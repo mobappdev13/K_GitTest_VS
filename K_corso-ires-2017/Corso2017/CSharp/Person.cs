@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace testFetchPush
+namespace CSharp
 {
-    class Program
+    class Person
     {
-        static void Main(string[] args)
+        string nome;
+        string cognome;
+
+        string Saluta()
         {
+            return "";
         }
     }
 }
