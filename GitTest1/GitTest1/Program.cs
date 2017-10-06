@@ -14,6 +14,7 @@ namespace GitTest1
             Console.WriteLine("Hola soy K, tratando de aprender GitHub en VS ");
             //trato de cambiar el codigo desde gitHub, mirando que pasa en Visual Studio
              Console.ReadLine();
+            //hice modificaciones desde GitHub y funcionaron            
         }
     }
 }
