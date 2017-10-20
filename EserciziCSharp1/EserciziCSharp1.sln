@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classi", "EserciziCSharp1\C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModificatoriAccesso", "ModificatoriAccesso\ModificatoriAccesso.csproj", "{929876F5-8E15-4FAB-811A-45691D0C3153}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Date", "Date\Date.csproj", "{BB016FB3-2D69-403C-9D4E-B088414CCC7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{929876F5-8E15-4FAB-811A-45691D0C3153}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929876F5-8E15-4FAB-811A-45691D0C3153}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{929876F5-8E15-4FAB-811A-45691D0C3153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB016FB3-2D69-403C-9D4E-B088414CCC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB016FB3-2D69-403C-9D4E-B088414CCC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB016FB3-2D69-403C-9D4E-B088414CCC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB016FB3-2D69-403C-9D4E-B088414CCC7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
