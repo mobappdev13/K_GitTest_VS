@@ -4,16 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp
+namespace EserciziCSharp1
 {
-    class Person
+    class Program
     {
-        string nome;
-        string cognome;
-
-        string Saluta()
+        static void Main(string[] args)
         {
-            return "";
         }
     }
 }
