@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassiAstratte1", "ClassiAs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassiAstratte2", "ClassiAstratte2\ClassiAstratte2.csproj", "{35A68163-0693-4A43-AC76-038019B30072}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces1", "Interfaces1\Interfaces1.csproj", "{26779CED-F290-43EA-84DB-C097E99A337C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{35A68163-0693-4A43-AC76-038019B30072}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35A68163-0693-4A43-AC76-038019B30072}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35A68163-0693-4A43-AC76-038019B30072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26779CED-F290-43EA-84DB-C097E99A337C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26779CED-F290-43EA-84DB-C097E99A337C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26779CED-F290-43EA-84DB-C097E99A337C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26779CED-F290-43EA-84DB-C097E99A337C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
