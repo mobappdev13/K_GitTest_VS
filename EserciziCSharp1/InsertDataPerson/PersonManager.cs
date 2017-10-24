@@ -34,9 +34,21 @@ namespace InsertPersonData
         internal void AddPerson(string nome, string cognome, string birthday, int id)
         {
             Person user = new Person(nome, cognome, birthday, id);
-            _storage.Add(user);
+            try
+            {
+                _storage.Add(user);
+            }
+            catch (Exception ex)
+            {
+                var myEx = new Exception($"messaggio: non riesco ad inserire la Persona in PersonManager {ex} { ex.Message} {ex.GetType()} ");
+                throw myEx;
+            }
+            //finally
             
         }
+
+       
+
         internal static int CreaId(List<Person> idList)
         {
             //Person user = new Person(nome, cognome, birthday, id);

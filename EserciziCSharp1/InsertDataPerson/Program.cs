@@ -21,12 +21,29 @@ namespace InsertPersonData
             string input = Console.ReadLine();
             if (input == "r")
             {
-                personManager = new PersonManager(new MemoryStorage());
+                try
+                {
+                    personManager = new PersonManager(new MemoryStorage());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"eccezione in add person in memoria {ex.Message} {ex.GetType()}");
+                    throw;
+                }//tryc
+               
             }
             else
             {
-                personManager = new PersonManager(new FileStorage());
-            }
+                try
+                {
+                    personManager = new PersonManager(new FileStorage());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"eccezione in add person su file {ex.Message} {ex.GetType}");
+                    throw;
+                }//tryc
+            }//endif
 
             if (input == "r") memory = false;
             if (input == "d") memory = true;
@@ -122,6 +139,7 @@ namespace InsertPersonData
             string birthday = Console.ReadLine();
             int _id;
             _id = id + 1;
+
             personManager.AddPerson(nome, cognome, birthday, _id);
             MonitorConsole.PersonAdded();
             return;
@@ -156,6 +174,7 @@ namespace InsertPersonData
 
         }
 
+        
 
     }
 }

@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonProject", "PersonProj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertDataPerson", "InsertDataPerson\InsertDataPerson.csproj", "{E19D0101-20EA-47C3-87D1-6DB73328290A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate1", "Delegate1\Delegate1.csproj", "{5C816E10-71AF-4C99-85C8-6ADFE7314F7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{E19D0101-20EA-47C3-87D1-6DB73328290A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E19D0101-20EA-47C3-87D1-6DB73328290A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E19D0101-20EA-47C3-87D1-6DB73328290A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C816E10-71AF-4C99-85C8-6ADFE7314F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C816E10-71AF-4C99-85C8-6ADFE7314F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C816E10-71AF-4C99-85C8-6ADFE7314F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C816E10-71AF-4C99-85C8-6ADFE7314F7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
