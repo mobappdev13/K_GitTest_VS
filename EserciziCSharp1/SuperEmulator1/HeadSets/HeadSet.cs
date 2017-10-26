@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SuperEmulator1.Cameras;
 
 namespace SuperEmulator1
 {
     public abstract class HeadSet
     {
         //last added
-        IFrontCameraBehavior _frontCameraBehavior;
-        IRearCameraBehavior _rearCameraBhavior;
+        ICamera _frontCameraBehavior;
+        ICamera _rearCameraBhavior;
 
         public bool Call(double number)
         {
@@ -24,25 +25,30 @@ namespace SuperEmulator1
             return true;
         }
 
-        ////public abstract string DisplayModel(string ) 
-        //{
-        //}
+       
         public void GoTakePicture()
         {
-            _rearCameraBhavior.TakePicture();
+          //  _rearCameraBhavior.;
            
         }
         public void GoTakeSelfie()
         {
-            _frontCameraBehavior.TakeSelfie() ;
+          //  _frontCameraBehavior. ;
           
         }
 
-        //public ActionResult (...)
-        //{
-            
-        //    return true 
-        //}
+        public class ActionResult ActivateCamera()
+        {
+            ActionResult result = new ActionResult();
+            return result;
+        }
+
+        public class ActionResult DeActivateCamera()
+        {
+
+            ActionResult result = new ActionResult();
+            return result;
+        }
     }
 }
 

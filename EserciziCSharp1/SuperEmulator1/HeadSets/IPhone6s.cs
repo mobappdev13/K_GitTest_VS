@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SuperEmulator1
 {
-    public interface IRearCameraBehavior
+    public class IPhone6s : HeadSet
     {
-      string TakePicture();
+
     }
 }

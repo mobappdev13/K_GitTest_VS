@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace SuperEmulator1
 {
-    public class IPhone6s : HeadSet
+    class ActionResult
     {
+        string _message;
+        bool _statusCall;
+        public ActionResult()
+        {
+            
+        }
     }
 }

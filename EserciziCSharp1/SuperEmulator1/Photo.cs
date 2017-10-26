@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace SuperEmulator1
 {
-    public interface IFrontCameraBehavior
+    class Photo
     {
-        string TakeSelfie();
-        
+        Photo photo;
     }
 }

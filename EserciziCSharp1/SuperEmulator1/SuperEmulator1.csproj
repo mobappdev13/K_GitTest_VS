@@ -40,18 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="5MPFrontCamera.cs" />
-    <Compile Include="NoRearCamera.cs" />
-    <Compile Include="12MPRearCamera.cs" />
-    <Compile Include="5MPRearCamera.cs" />
+    <Compile Include="ActionResult.cs" />
+    <Compile Include="Cameras\ICamera.cs" />
     <Compile Include="Emulatore.cs" />
-    <Compile Include="HeadSet.cs" />
-    <Compile Include="IFrontCameraBehavior.cs" />
-    <Compile Include="IPhone6s.cs" />
-    <Compile Include="IRearCameraBehavior.cs" />
-    <Compile Include="Nokia3310.cs" />
+    <Compile Include="HeadSets\HeadSet.cs" />
+    <Compile Include="HeadSets\IPhone6s.cs" />
+    <Compile Include="HeadSets\Nokia3310.cs" />
+    <Compile Include="Photo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SamsungGalaxyS.cs" />
+    <Compile Include="HeadSets\SamsungGalaxyS.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
