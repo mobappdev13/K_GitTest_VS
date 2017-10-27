@@ -7,14 +7,13 @@ using SuperEmulator1.Cameras;
 
 namespace SuperEmulator1
 {
-      class Nokia3310 : HeadSet
+    class GalaxyS : HeadSet
     {
-        internal override string Model => "Nokia 3310";
-        public Nokia3310()
+        internal override string Model => "GalaxyS";
+        public GalaxyS()
         {
-            //attenzione
             _frontCamera = new NoCamera();
-            _rearCamera = new NoCamera();
+            _rearCamera = new FiveMegapixelsCamera();
         }
     }
 }

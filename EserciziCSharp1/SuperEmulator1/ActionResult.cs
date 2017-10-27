@@ -8,13 +8,17 @@ namespace SuperEmulator1
 {
     internal class ActionResult
     {
-        public string _message { get; private set; }
-        public bool _success { get; private set; }
+        public string Message { get; private set; }
+        public bool Success { get; private set; }
 
-        public ActionResult(string message, bool success)
+        public ActionResult(bool success, string message)
         {
-            _message = message;
-            _success = success;
+            Success = success;
+            Message = message;
+        }
+        //attenzione inner costruttire
+        public ActionResult(bool success) : this(success, string.Empty)
+        {
         }
     }
 }

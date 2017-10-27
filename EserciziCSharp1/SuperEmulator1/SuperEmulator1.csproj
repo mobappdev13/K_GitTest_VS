@@ -41,14 +41,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionResult.cs" />
+    <Compile Include="Cameras\EightMegapixelCamera.cs" />
+    <Compile Include="Cameras\FiveMegapixelsCamera.cs" />
     <Compile Include="Cameras\ICamera.cs" />
+    <Compile Include="Cameras\NoCamera.cs" />
     <Compile Include="Emulatore.cs" />
     <Compile Include="HeadSets\HeadSet.cs" />
     <Compile Include="HeadSets\IPhone6s.cs" />
     <Compile Include="HeadSets\Nokia3310.cs" />
     <Compile Include="Photo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="HeadSets\SamsungGalaxyS.cs" />
+    <Compile Include="HeadSets\GalaxyS.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

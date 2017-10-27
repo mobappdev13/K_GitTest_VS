@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperEmulator1
 {
-    class Photo
+    internal class Photo
     {
-        Photo photo;
     }
 }

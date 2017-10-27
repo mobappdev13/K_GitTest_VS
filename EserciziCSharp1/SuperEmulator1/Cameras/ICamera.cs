@@ -11,8 +11,7 @@ namespace SuperEmulator1.Cameras
     {
         Photo TakeSnap();
         bool IsActive { get; }
-        ActionResult ActivateCamera();
+        ActionResult Activate();
+        ActionResult Deactivate();
     }
-
-    
 }
