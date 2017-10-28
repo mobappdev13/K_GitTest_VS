@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperEmulator1", "SuperEmul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperEmulatore1Test", "SuperEmulatore1Test\SuperEmulatore1Test.csproj", "{516F76EC-6B34-452D-8349-9A7211A4BAEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmulatorTest", "EmulatorTest\EmulatorTest.csproj", "{C7921EA4-2652-4D4A-B70A-AA9C9C824965}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadsetEmulator", "HeadsetEmulator\HeadsetEmulator.csproj", "{5DB4A3ED-781C-4111-AE3D-47C522923CBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{516F76EC-6B34-452D-8349-9A7211A4BAEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{516F76EC-6B34-452D-8349-9A7211A4BAEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{516F76EC-6B34-452D-8349-9A7211A4BAEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7921EA4-2652-4D4A-B70A-AA9C9C824965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7921EA4-2652-4D4A-B70A-AA9C9C824965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7921EA4-2652-4D4A-B70A-AA9C9C824965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7921EA4-2652-4D4A-B70A-AA9C9C824965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB4A3ED-781C-4111-AE3D-47C522923CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB4A3ED-781C-4111-AE3D-47C522923CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB4A3ED-781C-4111-AE3D-47C522923CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB4A3ED-781C-4111-AE3D-47C522923CBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperEmulator1
+namespace HeadsetEmulator.Events
 {
-    public interface IRearCameraBehavior
+    public interface ICallStatusObserver
     {
-      string TakePicture();
+        void CallStatusChanged(bool status);
     }
 }

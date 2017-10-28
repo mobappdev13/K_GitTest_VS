@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperEmulator1
+namespace HeadsetEmulator
 {
-    public interface IFrontCameraBehavior
+    internal class Photo
     {
-        string TakeSelfie();
-        
     }
 }
