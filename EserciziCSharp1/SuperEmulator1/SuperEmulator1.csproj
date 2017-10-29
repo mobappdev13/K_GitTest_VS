@@ -20,7 +20,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,15 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cameras\5MPFrontCamera.cs" />
-    <Compile Include="Cameras\12MPRearCamera.cs" />
-    <Compile Include="Cameras\5MPRearCamera.cs" />
+    <Compile Include="ActionResult.cs" />
+    <Compile Include="Cameras\EightMegapixelCamera.cs" />
+    <Compile Include="Cameras\FiveMegapixelsCamera.cs" />
+    <Compile Include="Cameras\ICamera.cs" />
+    <Compile Include="Cameras\NoCamera.cs" />
     <Compile Include="Emulatore.cs" />
     <Compile Include="HeadSets\HeadSet.cs" />
     <Compile Include="HeadSets\IPhone6s.cs" />
     <Compile Include="HeadSets\Nokia3310.cs" />
+    <Compile Include="Photo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="HeadSets\SamsungGalaxyS.cs" />
+    <Compile Include="HeadSets\GalaxyS.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
