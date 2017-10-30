@@ -8,9 +8,14 @@ namespace CameraAbstractClass
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            Console.WriteLine(" questo " + ("Camera " + Enum.GetName(typeof(TypeCamera), 1)));
+            IphoneCamera iphoneCamera = new IphoneCamera("Iphone's Camera", TypeCamera.FRONT, false);
+            //with getDescrption non override in IphoneCamera commented
+           // Console.WriteLine($"result {iphoneCamera.GetDescription("Iphone's Camera", TypeCamera.FRONT)} is activate ? {iphoneCamera.Activate()} ");
+            //with getDescption override in IphoneCamera uncommented
+            Console.WriteLine($"result {iphoneCamera.GetDescription("Iphone's Camera", TypeCamera.FRONT)} is activate ? {iphoneCamera.Activate()} ");
             Console.ReadLine();
         }
     }

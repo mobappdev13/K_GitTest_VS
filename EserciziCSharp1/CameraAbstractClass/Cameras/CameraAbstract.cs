@@ -15,6 +15,7 @@ namespace CameraAbstractClass
         protected string _nameCamera;
         protected bool _isActive;
         protected TypeCamera _typeCamera;
+        
         //costruttore
         public CameraAbstract(string nameCamera, TypeCamera typeCamera, bool isActive)
         {
@@ -31,18 +32,28 @@ namespace CameraAbstractClass
 
 
         // metodo non astratto
-        public string GetDescription(string _nameCamera, TypeCamera _typeCamera)
+        // public string GetDescription(string _nameCamera, TypeCamera _typeCamera)
+        public virtual string GetDescription(string _nameCamera, TypeCamera _typeCamera)
         {
-            Console.WriteLine(" questo " + (_nameCamera + Enum.GetName(typeof(TypeCamera), 1)));
-            return "si";
+            //le classi derivate "possono" riscrivere (override)
+            // Console.WriteLine(" GetDescription " + (_nameCamera + Enum.GetName(typeof(TypeCamera), 1)));
+            // 0 FRONT, 1 REAR
+            if (_typeCamera == TypeCamera.FRONT)
+            {
+                return (_nameCamera + " " + Enum.GetName(typeof(TypeCamera), 0));
+            }
+            else
+            {
+                return (_nameCamera + " " + Enum.GetName(typeof(TypeCamera), 1));
+            }
         }
         // metodi astratti
-
+        //le classi derivate "devono" RISCRIVERE !!!
         public abstract bool Activate();
         public abstract bool DeActivate();
         public abstract void SetCamera();
         public abstract void TakePicture();
-        public abstract void ChargeCamera();
+        public abstract bool ChargeCamera(TypeCamera _typeCamera);
 
     }
 }
