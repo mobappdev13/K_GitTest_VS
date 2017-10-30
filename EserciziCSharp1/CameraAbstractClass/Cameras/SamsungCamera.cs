@@ -4,32 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CameraAbstractClass
+namespace CameraAbstractClass.Cameras
 {
-    public class IphoneCamera : CameraAbstract
+    class SamsungCamera : CameraAbstract
     {
-        //our variabiles
-
-        //costruttore
-        public IphoneCamera(string nameCamera, TypeCamera typeCamera, bool isActive) : base(nameCamera, typeCamera, isActive)
+        public SamsungCamera(string nameCamera, TypeCamera typeCamera, bool isActive) : base(nameCamera, typeCamera, isActive)
         {
-            
         }
-        //proprieta
-
-        //metodi non astratti
-        //public override string GetDescription(string _nameCamera, TypeCamera _typeCamera)
-        //{
-        //    if (_typeCamera == TypeCamera.FRONT)
-        //    {
-        //        return ("this method was overrated " +_nameCamera + " " + Enum.GetName(typeof(TypeCamera), 0));
-        //    }
-        //    else
-        //    {
-        //        return ("this method was overrated" +_nameCamera + " " + Enum.GetName(typeof(TypeCamera), 1));
-        //    }
-        //}
-        //metodi astratti
 
         public override bool Activate()
         {
@@ -41,12 +22,12 @@ namespace CameraAbstractClass
             {
                 Console.WriteLine(" Error was already active");
             }
-           return _isActive;
+            return _isActive; ;
         }
 
         public override string ChargeCamera()
         {
-           return " Camera was completly Charged!";
+            return " Camera was completly Charged!";
         }
 
         public override bool DeActivate()
@@ -61,7 +42,6 @@ namespace CameraAbstractClass
             }
             return _isActive;
         }
-    
 
         public override string SetCamera()
         {
@@ -86,6 +66,7 @@ namespace CameraAbstractClass
                 return (" Error taking Photo, Camera was not active");
             }
         }
-
     }
-}
+    }
+
+

@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Cameras\CameraAbstract.cs" />
     <Compile Include="Cameras\IphoneCamera.cs" />
+    <Compile Include="Cameras\NoCamera.cs" />
+    <Compile Include="Cameras\SamsungCamera.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

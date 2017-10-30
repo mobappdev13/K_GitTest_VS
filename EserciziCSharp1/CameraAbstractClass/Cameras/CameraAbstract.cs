@@ -8,7 +8,7 @@ namespace CameraAbstractClass
 {
     //a type
     public enum TypeCamera
-    { FRONT, REAR };
+    { FRONT, REAR, NOCAMERA };
     public abstract class CameraAbstract
     {
         //variabili di classe
@@ -33,27 +33,31 @@ namespace CameraAbstractClass
 
         // metodo non astratto
         // public string GetDescription(string _nameCamera, TypeCamera _typeCamera)
-        public virtual string GetDescription(string _nameCamera, TypeCamera _typeCamera)
+       public virtual string GetDescription(string _nameCamera, TypeCamera _typeCamera)
         {
             //le classi derivate "possono" riscrivere (override)
             // Console.WriteLine(" GetDescription " + (_nameCamera + Enum.GetName(typeof(TypeCamera), 1)));
-            // 0 FRONT, 1 REAR
+            // 0 FRONT, 1 REAR, 2 NOCAMERA
             if (_typeCamera == TypeCamera.FRONT)
             {
                 return (_nameCamera + " " + Enum.GetName(typeof(TypeCamera), 0));
             }
-            else
+            else if (_typeCamera == TypeCamera.REAR)
             {
                 return (_nameCamera + " " + Enum.GetName(typeof(TypeCamera), 1));
+            }
+            else
+            {
+                return (_nameCamera + " " + Enum.GetName(typeof(TypeCamera), 2));
             }
         }
         // metodi astratti
         //le classi derivate "devono" RISCRIVERE !!!
         public abstract bool Activate();
         public abstract bool DeActivate();
-        public abstract void SetCamera();
-        public abstract void TakePicture();
-        public abstract bool ChargeCamera(TypeCamera _typeCamera);
+        public abstract string SetCamera();
+        public abstract string TakePicture();
+        public abstract string ChargeCamera();
 
     }
 }
