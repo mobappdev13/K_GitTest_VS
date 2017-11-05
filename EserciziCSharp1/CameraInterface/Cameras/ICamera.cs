@@ -8,11 +8,16 @@ namespace CameraInterface.Cameras
 {
     interface ICamera
     {
-        
-        ActionResult Activate();
         bool isActive { get; set; }
+
+        ActionResult Activate();
+       
         ActionResult DeActivate();
 
+        ActionResult ChargeCamera();
+
+        ActionResult SetCamera();
+      
         ImagePhoto TakeSnap();
     }
 }
