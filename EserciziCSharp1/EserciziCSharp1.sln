@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModificatoriAccesso", "ModificatoriAccesso\ModificatoriAccesso.csproj", "{929876F5-8E15-4FAB-811A-45691D0C3153}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Date", "Date\Date.csproj", "{BB016FB3-2D69-403C-9D4E-B088414CCC7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassiAstratte1", "ClassiAstratte1\ClassiAstratte1.csproj", "{E206157C-92AC-494F-BAC7-07C3713FDCE2}"
@@ -73,10 +71,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{929876F5-8E15-4FAB-811A-45691D0C3153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{929876F5-8E15-4FAB-811A-45691D0C3153}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{929876F5-8E15-4FAB-811A-45691D0C3153}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{929876F5-8E15-4FAB-811A-45691D0C3153}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB016FB3-2D69-403C-9D4E-B088414CCC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB016FB3-2D69-403C-9D4E-B088414CCC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB016FB3-2D69-403C-9D4E-B088414CCC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
