@@ -21,11 +21,11 @@ namespace SmartHome
             IStatusWriter consoleWriter = new ConsoleStatusWriter();
 
             Device salonLamp = new Lamp("Salon");
-            Device myx = new Lamp("stairs");
-
+            
             // uses the event in device...
             // DeviceStatusChangedEventHandler StatusChanged
             //x += y  => x = x + y  
+            //lo addizione alla lista dei delegati
             salonLamp.StatusChanged += consoleWriter.DeviceStatusChanged;
 
             //salonLamp.AddSubscriber(consoleWriter);

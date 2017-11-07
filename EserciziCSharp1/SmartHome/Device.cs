@@ -18,7 +18,7 @@ namespace SmartHome
         // example... public delegate void SampleEventHandler(object sender, SampleEventArgs e);
         //delegate int NumberChanger(int n);
         public delegate void DeviceStatusChangedEventHandler(Device device);
-
+       
 
         //Declare the event.
         //example...  public event SampleEventHandler SampleEvent;
