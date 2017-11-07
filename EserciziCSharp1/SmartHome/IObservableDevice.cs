@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace SmartHome
 {
-    interface IObservableDevice
+    interface IObservableDevice        
     {
-        void AddSubscriber(IStatusWriter writer);
-        void RemoveSubscriber(IStatusWriter writer);
+        //Method Subscribe(IObserver<T>)
+        //IStatusWriter is an IObserver
 
+        //add Observer
+        void AddSubscriber(IStatusWriter writer);
+        //remove Observer
+        void RemoveSubscriber(IStatusWriter writer);
+        //notify Observers (can be a list)
         void NotifyStatusChanged();
     }
 }

@@ -16,9 +16,16 @@ namespace SmartHome
 
         static void Main(string[] args)
         {
+            //observer for console
+            // creates a concrete console object observer
             IStatusWriter consoleWriter = new ConsoleStatusWriter();
 
             Device salonLamp = new Lamp("Salon");
+            Device myx = new Lamp("stairs");
+
+            // uses the event in device...
+            // DeviceStatusChangedEventHandler StatusChanged
+            //x += y  => x = x + y  
             salonLamp.StatusChanged += consoleWriter.DeviceStatusChanged;
 
             //salonLamp.AddSubscriber(consoleWriter);
@@ -28,6 +35,7 @@ namespace SmartHome
             salonLamp.TurnOff();
 
             Device kitchenFan = new Fan("Kitchen");
+            //
             kitchenFan.AddSubscriber(consoleWriter);
             kitchenFan.TurnOn();
 

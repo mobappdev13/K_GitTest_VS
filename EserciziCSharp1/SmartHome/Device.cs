@@ -9,11 +9,26 @@ namespace SmartHome
 {
     public abstract class Device : IObservableDevice
     {
+        //manages events and delegates
+
+        //this is the Observabile Class
+        // in particolar Status is the property to be observed
+
+        // Declare the delegate (if using non-generic pattern).
+        // example... public delegate void SampleEventHandler(object sender, SampleEventArgs e);
+        //delegate int NumberChanger(int n);
         public delegate void DeviceStatusChangedEventHandler(Device device);
+
+
+        //Declare the event.
+        //example...  public event SampleEventHandler SampleEvent;
+        //with the same name of Delegate
+        // NumberChanger numberCharger1 = new NumberChanger(AddNum);
         public event DeviceStatusChangedEventHandler StatusChanged;
 
         protected bool _isOn;
 
+        //this is a fondamental list of Subscrivers (observers)
         private List<IStatusWriter> _subscribers = new List<IStatusWriter>();
 
         public Device(string room)
@@ -25,11 +40,8 @@ namespace SmartHome
 
         public string Room { get; private set; }
 
-        //public string GetStatus()
-        //{
-        //    return IsOn ? "on" : "off";
-        //}
-
+      
+        //this is the property to be observed
         public string Status
         {
             get
@@ -38,23 +50,35 @@ namespace SmartHome
             }
         }
 
+        //add method of the interface IObservableDevice
         public void AddSubscriber(IStatusWriter writer)
-        { 
+        {
+            // add subscribers only if is not present 
+            // does not accept duplicate
             if (!_subscribers.Contains(writer))
                 _subscribers.Add(writer);
         }
 
+        //Remove method of the interface IObservableDevice
         public void RemoveSubscriber(IStatusWriter writer)
         {
+            // add subscribers only if is not present 
+            // does not accept duplicate
             if (_subscribers.Contains(writer))
                 _subscribers.Remove(writer);
         }
 
+        ////Notify method of the interface IObservableDevice
         public void NotifyStatusChanged()
         {
             if (StatusChanged != null)
+                
+                //call the event with delegate
                 StatusChanged(this);
 
+            //informs all subscribers of state change
+            // call the updateMethod of each Observer
+            // this refers to the current device of this class
             foreach (IStatusWriter subscriber in _subscribers)
             {
                 subscriber.DeviceStatusChanged(this);
@@ -67,6 +91,7 @@ namespace SmartHome
             _isOn = true;
 
             if (oldStatus != _isOn)
+                // notyfy all the obsevers thet status are changed
                 NotifyStatusChanged();
 
             return _isOn;
@@ -78,6 +103,7 @@ namespace SmartHome
             _isOn = false;
 
             if (oldStatus != _isOn)
+                // // notyfy all the obsevers thet status are changed
                 NotifyStatusChanged();
 
             return _isOn;
