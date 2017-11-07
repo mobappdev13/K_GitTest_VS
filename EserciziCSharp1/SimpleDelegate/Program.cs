@@ -13,6 +13,7 @@ namespace SimpleDelegate
         {
             Console.WriteLine();
             Console.WriteLine("Delegate examples ");
+            //
             myDelegate delegato = new myDelegate(Radio.RadiusMethod);
             delegato("Saluto trasmesso alla Radio, Ciao a Tutti");
             Console.WriteLine();

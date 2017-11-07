@@ -9,21 +9,10 @@ namespace SmartHome
 {
     public abstract class Device : IObservableDevice
     {
-        //manages events and delegates
-
-        //this is the Observabile Class
-        // in particolar Status is the property to be observed
-
-        // Declare the delegate (if using non-generic pattern).
-        // example... public delegate void SampleEventHandler(object sender, SampleEventArgs e);
-        //delegate int NumberChanger(int n);
+        //base: public delegate string MyDelegate(string str);
         public delegate void DeviceStatusChangedEventHandler(Device device);
-       
 
-        //Declare the event.
-        //example...  public event SampleEventHandler SampleEvent;
-        //with the same name of Delegate
-        // NumberChanger numberCharger1 = new NumberChanger(AddNum);
+        //base: event MyDelegate _MyEvent;       
         public event DeviceStatusChangedEventHandler StatusChanged;
 
         protected bool _isOn;
@@ -72,8 +61,11 @@ namespace SmartHome
         public void NotifyStatusChanged()
         {
             if (StatusChanged != null)
-                
+
                 //call the event with delegate
+                //StatusChanged(this Device);
+                //
+                //  delegato("Ciao, buon compleanno, Lunga vita a te !")
                 StatusChanged(this);
 
             //informs all subscribers of state change

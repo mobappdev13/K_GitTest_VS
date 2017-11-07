@@ -13,7 +13,7 @@ namespace SmartHome.StatusWriters
         public void DeviceStatusChanged(Device device)
         {
             //only for console
-            Console.WriteLine($"{ device.Room } { device.DeviceType } is { device.Status }");
+            Console.WriteLine($"*{ device.Room }-{ device.DeviceType }* is { device.Status }*");
         }
     }
 }

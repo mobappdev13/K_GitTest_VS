@@ -21,6 +21,7 @@ namespace SampleApp
         static void Main(string[] args)
         {
             Events greet = new Events();
+            
             string result = greet._MyEvent("user Carmen ");
             Console.WriteLine(result);
             Console.ReadLine();

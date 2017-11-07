@@ -9,23 +9,20 @@ namespace SmartHome
 {
     class Program
     {
-        static void Foo(Device device)
-        {
-
-        }
-
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
             //observer for console
             // creates a concrete console object observer
             IStatusWriter consoleWriter = new ConsoleStatusWriter();
 
             Device salonLamp = new Lamp("Salon");
+
             
-            // uses the event in device...
-            // DeviceStatusChangedEventHandler StatusChanged
-            //x += y  => x = x + y  
-            //lo addizione alla lista dei delegati
+            // event DeviceStatusChangedEventHandler StatusChanged
+            //x += y  => x = x + y  (add list of delegate)
+            // _MyEvent += new MyDelegate(this.WelcomeUser);
+            //salonLamp.Event è anche un delegate
+            //notify status changed a Consolewriter (list of observers)
             salonLamp.StatusChanged += consoleWriter.DeviceStatusChanged;
 
             //salonLamp.AddSubscriber(consoleWriter);
@@ -35,18 +32,22 @@ namespace SmartHome
             salonLamp.TurnOff();
 
             Device kitchenFan = new Fan("Kitchen");
-            //
-            kitchenFan.AddSubscriber(consoleWriter);
-            kitchenFan.TurnOn();
 
+            //Observable ... add subscriber
+            kitchenFan.AddSubscriber(consoleWriter);
+
+            kitchenFan.TurnOn();
             salonLamp.TurnOff();
 
             Device ledBathroomLamp = new LedLamp("Bathroom");
+            //Observable ... add subscriber
             ledBathroomLamp.AddSubscriber(consoleWriter);
+
             ledBathroomLamp.TurnOn();
 
             Device halogenBathroomLamp = new HalogenLamp("Bathroom");
             halogenBathroomLamp.AddSubscriber(consoleWriter);
+            //Observable ... add subscriber
             halogenBathroomLamp.TurnOn();
 
             Console.ReadLine();
