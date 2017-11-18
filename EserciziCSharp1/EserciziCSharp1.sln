@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManyOutputReturns", "ManyOu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModificatoriAccesso", "ModificatoriAccesso\ModificatoriAccesso.csproj", "{929876F5-8E15-4FAB-811A-45691D0C3153}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesEreditarieta", "InterfacesEreditarieta\InterfacesEreditarieta.csproj", "{99F91E5C-D05A-478F-A429-D0B6B2E36453}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{929876F5-8E15-4FAB-811A-45691D0C3153}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929876F5-8E15-4FAB-811A-45691D0C3153}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{929876F5-8E15-4FAB-811A-45691D0C3153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F91E5C-D05A-478F-A429-D0B6B2E36453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F91E5C-D05A-478F-A429-D0B6B2E36453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F91E5C-D05A-478F-A429-D0B6B2E36453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F91E5C-D05A-478F-A429-D0B6B2E36453}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

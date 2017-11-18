@@ -10,14 +10,19 @@ namespace Ereditariea
     {
         static void Main(string[] args)
         {
-            BaseClass bc = new BaseClass();
-            DerivedClass dc = new DerivedClass();
-            BaseClass bcdc = new DerivedClass();
+            //BaseClass baseclass1 = new BaseClass();
+            DerivedClass derivedclass = new DerivedClass();
+            //BaseClass baseClass2 = new DerivedClass();
+            //DerivedClass derivedclass2 = new BaseClass(); error
 
-            bc.Method1();
-            dc.Method1();
-            dc.Method2();
-            bcdc.Method1();
+            //baseclass1.Method1();
+            //derivedclass.Method1();
+            //derivedclass.Method2();
+            //baseClass2.Method1();
+            //baseClass2.Method2(); error
+            derivedclass.Method1();
+            //derivedclass2.Method2(); //error
+            Console.ReadLine();
         }
     }
  }
