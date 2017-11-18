@@ -8,6 +8,7 @@ namespace ModificatoriAccesso
 {
     class PrivateClass
     {
+        //only protected field can be used on derivated class 
         // this can be accesed to another place
         private string _cognome;
         private int _eta;

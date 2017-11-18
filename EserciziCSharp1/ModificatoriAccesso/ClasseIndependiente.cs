@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace ModificatoriAccesso
 {
-    class ClasseIndependiente
+    class IndependentClass
     {
+        public string myString = "vero";
         private string _id;
-        public ClasseIndependiente()
+        internal int myIntInternal = 325;
+        protected int myProtected = 123;
+        protected internal int MyProtectedInternal = 455;
+
+        public IndependentClass()
         {
             _id = "idddddddddddddddddddd";
         }
