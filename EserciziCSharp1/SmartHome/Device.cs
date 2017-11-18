@@ -62,9 +62,7 @@ namespace SmartHome
         {
             if (StatusChanged != null)
 
-                //call the event with delegate
-                //StatusChanged(this Device);
-                //
+               
                 //  delegato("Ciao, buon compleanno, Lunga vita a te !")
                 StatusChanged(this);
 

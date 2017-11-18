@@ -10,8 +10,19 @@ namespace HeadsetEmulator
 {
     public class Emulator : ICallStatusNotifier
     {
-        private List<ICallStatusObserver> _observer;
+        //base: public delegate string MyDelegate(string str);
+        public delegate void CallStatusChangedEventHandler(Emulator emulator);
+
+        //base: event MyDelegate _MyEvent;       
+        public event CallStatusChangedEventHandler CallStatusChanged;
+       
+        //list of observers of call status
+        private List<ICallStatusObserver> _observers = new List<ICallStatusObserver>();
+
+        //list of headsets for shoose the model to emulate
         private readonly List<HeadSet> _headsets;
+       
+        //current model selected
         private HeadSet _currentHeadSet;
 
         public Emulator()
@@ -26,6 +37,10 @@ namespace HeadsetEmulator
             _currentHeadSet = null;
         }
 
+        //
+        //this is the property to be observed
+        public string CallStatus { get; set; }
+       
         public List<string> GetModels()
         {
             List<string> result = new List<string>();
@@ -64,11 +79,9 @@ namespace HeadsetEmulator
 
         public void Call(string number)
         {
-
             if (IsModelSelected())
             {
                 ActionResult action = _currentHeadSet.Call(number);
-
             }
         }
 
@@ -79,17 +92,31 @@ namespace HeadsetEmulator
 
         public void AddCallStatusChangedObserver(ICallStatusObserver observer)
         {
-            throw new NotImplementedException();
-        }
+            if (!_observers.Contains(observer))
+            {
+                _observers.Add(observer);
+            }
+         }
 
         public void RemoveCallStatusChangedObserver(ICallStatusObserver observer)
         {
-            throw new NotImplementedException();
+            if (_observers.Contains(observer))
+            {
+                _observers.Remove(observer);
+            }
         }
 
         public void NotifyCallStatus()
         {
-            throw new NotImplementedException();
+            CallStatusChanged(this);
+
+            //informs all ICallStatusObserver the change state of call
+            foreach (ICallStatusObserver observer in _observers)
+            {
+                //observer.CallStatusChanged("2345678", false);
+                observer.CallStatusChanged(this);
+                
+           }
         }
     }
 }
