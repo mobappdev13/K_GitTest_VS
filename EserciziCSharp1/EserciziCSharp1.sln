@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesEreditarieta", "I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipiDidati", "TipiDidati\TipiDidati.csproj", "{EE02E119-A660-4E19-AD63-E9F54B96D2A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayCollection", "ArrayCollection\ArrayCollection.csproj", "{54EFE42C-81C9-4629-AF6E-F241759EE701}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -231,6 +233,10 @@ Global
 		{EE02E119-A660-4E19-AD63-E9F54B96D2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE02E119-A660-4E19-AD63-E9F54B96D2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE02E119-A660-4E19-AD63-E9F54B96D2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54EFE42C-81C9-4629-AF6E-F241759EE701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EFE42C-81C9-4629-AF6E-F241759EE701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EFE42C-81C9-4629-AF6E-F241759EE701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54EFE42C-81C9-4629-AF6E-F241759EE701}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
