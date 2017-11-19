@@ -22,8 +22,8 @@ namespace DataStructures
             {
                 Console.WriteLine($"Inserisci l'addendo ('=' per effettuare la somma)");
                 string input = Console.ReadLine();
-                
-                InputResult result = VerifyInput(input, out int number);
+                int number;
+                InputResult result = VerifyInput(input, out number);
 
                 if (result == InputResult.Equals)
                 {
@@ -50,7 +50,7 @@ namespace DataStructures
 
         private static List<int> GetNumbers(NumberType numberType, List<int> addends)
         {
-            int modResult = numberType == NumberType.Even ? 0 : 1;
+            int modResult = (numberType == NumberType.Even ? 0 : 1);
 
             List<int> selectedNumbers = new List<int>();
 

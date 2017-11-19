@@ -11,7 +11,7 @@ namespace CameraAbstractClass
     { FRONT, REAR, NOCAMERA };
     public abstract class CameraAbstract
     {
-        //variabili di classe
+        //variabili di classe ereditabili
         protected string _nameCamera;
         protected bool _isActive;
         protected TypeCamera _typeCamera;

@@ -19,7 +19,7 @@ namespace VirtualAndOverride
     {
         public override int Method1()
         {
-            return base.Method1()*TEN;
+            return base.Method1() * TEN;
         }
     }
     class Program
@@ -27,11 +27,10 @@ namespace VirtualAndOverride
         public static int result;
         static void Main(string[] args)
         {
-            
-        SuperClass sc = new SuperClass();        // create Instance type SuperClass in Variable SuperClass
-           DerivateClass dc = new DerivateClass(); // create Instance type DerivateClass in Variable DerivateClass
-           SuperClass sc1 = new DerivateClass();    // create Instance di DerivateClass in Variabile SuperClass
-            
+            SuperClass sc = new SuperClass();        // create Instance type SuperClass in Variable SuperClass
+            DerivateClass dc = new DerivateClass(); // create Instance type DerivateClass in Variable DerivateClass
+            SuperClass sc1 = new DerivateClass();    // create Instance di DerivateClass in Variabile SuperClass
+
             //invoke Method1 and result
             result = sc.Method1(); //invoke method1 in superclass
             Console.WriteLine($"result method1 in superclass {result}");
@@ -40,7 +39,6 @@ namespace VirtualAndOverride
             result = sc1.Method1(); //invoke method1 in derivateclass
             Console.WriteLine($"result method1 in derivateClass {result}");
             Console.ReadLine();
-
         }
     }
 }
