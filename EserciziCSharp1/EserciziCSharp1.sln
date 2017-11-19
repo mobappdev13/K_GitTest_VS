@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModificatoriAccesso", "Modi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesEreditarieta", "InterfacesEreditarieta\InterfacesEreditarieta.csproj", "{99F91E5C-D05A-478F-A429-D0B6B2E36453}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipiDidati", "TipiDidati\TipiDidati.csproj", "{EE02E119-A660-4E19-AD63-E9F54B96D2A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{99F91E5C-D05A-478F-A429-D0B6B2E36453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99F91E5C-D05A-478F-A429-D0B6B2E36453}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99F91E5C-D05A-478F-A429-D0B6B2E36453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE02E119-A660-4E19-AD63-E9F54B96D2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE02E119-A660-4E19-AD63-E9F54B96D2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE02E119-A660-4E19-AD63-E9F54B96D2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE02E119-A660-4E19-AD63-E9F54B96D2A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
