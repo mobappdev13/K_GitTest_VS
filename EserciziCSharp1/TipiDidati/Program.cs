@@ -84,6 +84,23 @@ namespace TipiDidati
             Console.WriteLine($"tipo decimal 128 BIT ALTA PRECISSIONE (28/ 29 cifre) con SEGNO value: ({myMoney2})");
             Console.WriteLine("");
             Console.WriteLine("");
+
+
+            //conversioni di tipo
+            //implicite ed esplicite (cast)
+            //Poiché non esiste alcuna conversione implicita tra altri tipi a virgola mobile
+            //e il tipo decimal, è necessario usare un cast per eseguire una conversione tra questi due tipi. Ad esempio:
+            decimal myMoney = 99.9345m;
+            double x = (double)myMoney; // decimal to double
+            //
+            Console.WriteLine("****************************************************************************************");
+            Console.WriteLine("****decimal to double .... double to decimal                              ************");
+            Console.WriteLine("****************************************************************************************");
+            Console.WriteLine($"decimal to double value: decimal ({myMoney}) (double)myMoney value        { x}        Risult Covertion GetType >>>  ({ x.GetType()})");
+            Console.WriteLine($"double to decimal value: double  ({myMoney}) (decimal)x value             { myMoney}  Risult Covertion GetType >>>  ({ myMoney.GetType()})");
+            Console.WriteLine("");
+            myMoney = (decimal)x; // double to decimal 
+
             //Console.Write(caption);
             //if (resultGeneric == resultNonGeneric)
             //{
