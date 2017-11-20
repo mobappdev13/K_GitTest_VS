@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayCollection", "ArrayCol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDataAccess", "MyDataAccess\MyDataAccess.csproj", "{45E2EF71-F48B-4BA0-9EBB-493756E47196}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoincrementoDecremento", "AutoincrementoDecremento\AutoincrementoDecremento.csproj", "{AA16D5F9-0EA5-4649-9D7F-935193B47300}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +245,10 @@ Global
 		{45E2EF71-F48B-4BA0-9EBB-493756E47196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45E2EF71-F48B-4BA0-9EBB-493756E47196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45E2EF71-F48B-4BA0-9EBB-493756E47196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA16D5F9-0EA5-4649-9D7F-935193B47300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA16D5F9-0EA5-4649-9D7F-935193B47300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA16D5F9-0EA5-4649-9D7F-935193B47300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA16D5F9-0EA5-4649-9D7F-935193B47300}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
